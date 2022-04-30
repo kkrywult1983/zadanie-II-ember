@@ -5,5 +5,7 @@
 
     Setting `disableAnalytics` to true will prevent any data from being sent.
   */
+
+  "usePods": true, // Zmiana struktury katalogów.
   "disableAnalytics": false
 }
