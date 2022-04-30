@@ -17,5 +17,6 @@ Router.map(function () {
   this.route('user', function () {
     this.route('show');
   });
+
   this.route('settings');
 });
