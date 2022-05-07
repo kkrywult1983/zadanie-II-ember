@@ -1,7 +1,22 @@
 {{page-title 'Show'}}
 <Header>Show</Header>
-<h1>{{this.model.owner.username}}</h1>
-<h1>{{this.model.title}}</h1>
-<h1>{{this.model.body}}</h1>
+
+{{!-- <Post::Card @post={{this.model}}/> --}}
+
+<div class='card mt-3'>
+  <div class='card-header'>
+    {{this.model.owner.username}}
+  </div>
+  <div class='card-body'>
+    <blockquote class='blockquote mb-0'>
+      <p>{{this.model.title}}</p>
+      <footer class='blockquote-footer'>
+        {{this.model.body}}
+      </footer>
+    </blockquote>
+  </div>
+</div>
 
 {{outlet}}
+
+{{! {{! W post show template - stworzyć komponent > }}
