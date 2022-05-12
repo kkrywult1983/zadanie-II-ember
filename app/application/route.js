@@ -31,19 +31,19 @@ export default class ApplicationRoute extends Route {
     const post1 = {
       id: 1,
       title: 'Testowy',
-      body: 'zawartosc testowa',
+      body: 'zawartosc testowa1',
       owner: user1Model,
     };
     const post2 = {
       id: 2,
       title: 'Testowy2',
-      body: 'zawartosc testowa',
+      body: 'zawartosc testowa2',
       owner: user1Model,
     };
     const post3 = {
       id: 3,
       title: 'Testowy3',
-      body: 'zawartosc testowa',
+      body: 'zawartosc testowa3',
       owner: user2Model,
     };
 
