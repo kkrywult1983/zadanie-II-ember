@@ -5,22 +5,33 @@ import { storageFor } from 'ember-local-storage';
 
 export default class RegisterController extends Controller {
   @service store;
-  @storageFor('logged-As') loggedAs;
+  @service router;
+  @storageFor('logged-as') loggedAs;
 
   @action
-  onLoginChange(event) {}
+  onLoginChange(event) {
+    this.model.username = event.target.value;
+  }
 
   @action
-  onEmailChange(event) {}
+  onEmailChange(event) {
+    this.model.email = event.target.value;
+  }
 
   @action
-  onPhotoURLChange(event) {}
+  onPhotoURLChange(event) {
+    this.model.photoURL = event.target.value;
+  }
 
   @action
-  onPasswordChange(event) {}
+  onPasswordChange(event) {
+    this.model.password = event.target.value;
+  }
 
   @action
   async onSubmit(event) {
-    event.preventdefault();
+    event.preventDefault();
+    await this.model.save();
+    this.router.transitionTo('login');
   }
 }
