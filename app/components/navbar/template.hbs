@@ -1,7 +1,7 @@
 <nav class='navbar navbar-expand-lg navbar-light'>
   <div class='container-fluid'>
 
-    <LinkTo @route='index' class='navbar-brand'>Index
+    <LinkTo @route='home.index' class='navbar-brand'>navBar
     </LinkTo>
     <button
       class='navbar-toggler'
@@ -18,28 +18,18 @@
       <ul class='navbar-nav'>
 
         <li class='nav-item'>
-          <LinkTo class='nav-link' @route='posts'>Posts
+          <LinkTo class='nav-link' @route='home.posts'>Posts
           </LinkTo>
         </li>
 
         <li class='nav-item'>
-          <LinkTo class='nav-link' @route='users'>Users
+          <LinkTo class='nav-link' @route='home.users'>Users
           </LinkTo>
 
         </li>
 
         <li class='nav-item'>
-          <LinkTo class='nav-link' @route='settings'>Settings
-          </LinkTo>
-        </li>
-
-        <li class='nav-item'>
-          <LinkTo class='nav-link' @route='login'>Login
-          </LinkTo>
-        </li>
-
-        <li class='nav-item'>
-          <LinkTo class='nav-link' @route='register'>Register
+          <LinkTo class='nav-link' @route='home.settings'>Settings
           </LinkTo>
         </li>
 
