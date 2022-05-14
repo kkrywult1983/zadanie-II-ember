@@ -2,7 +2,7 @@ import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
 import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
-import { storageFor } from '@ember-local-storage';
+import { storageFor } from 'ember-local-storage';
 
 export default class LoginController extends Controller {
   @service store;
