@@ -18,16 +18,4 @@ export default class RegisterRoute extends Route {
   model() {
     return this.store.createRecord('user');
   }
-
-  resetController(controller, isExiting, transition) {
-    if (isExiting && transition.targetName !== 'error') {
-      controller.get('model').destroyRecord;
-      //   console.log(id);
-      //   this.store.unloadRecord('user', id);
-    }
-  }
-
-  //   @action
-  //   willTransition() {
-  //     this.store.unload('user');
 }
