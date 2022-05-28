@@ -1,4 +1,4 @@
-import Model, { attr, belongsTo } from '@ember-data/model';
+import Model, { attr, belongsTo, hasMany } from '@ember-data/model';
 
 export default class PostModel extends Model {
   @attr('string', { defaultValue: 'Unknown user' }) owner;
@@ -6,4 +6,5 @@ export default class PostModel extends Model {
   @attr('string') title;
   @attr('boolean', { defaultValue: false }) isDeleted;
   @belongsTo('user') owner;
+  @hasMany('like') likes;
 }
