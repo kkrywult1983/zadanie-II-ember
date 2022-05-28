@@ -57,7 +57,7 @@ export default class ApplicationRoute extends Route {
 
     const like1 = {
       user: user1Model,
-      post: post2Model,
+      post: post3Model,
     };
 
     const like1Model = this.store.createRecord('like', like1);
